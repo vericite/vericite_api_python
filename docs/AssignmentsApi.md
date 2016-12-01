@@ -16,6 +16,7 @@ Create/update assignment
 
 ### Example 
 ```python
+from __future__ import print_statement
 import time
 import vericite_lms_client
 from vericite_lms_client.rest import ApiException
@@ -33,7 +34,7 @@ try:
     api_response = api_instance.create_update_assignment(context_id, assignment_id, consumer, consumer_secret, assignment_data)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling AssignmentsApi->create_update_assignment: %s\n" % e
+    print("Exception when calling AssignmentsApi->create_update_assignment: %s\n" % e)
 ```
 
 ### Parameters
